@@ -1,0 +1,220 @@
+/* HTML y Body */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+}
+
+.general{
+    background-image: radial-gradient(circle, #aaaaaaa2, #898989a1, #6a6a6aa9, #4c4c4ca9, #303030), url(../image/estrellas.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:stretch;
+    animation-duration: 1s;
+    animation-name: aparecer;
+}
+
+.general__formulario{
+    background-color:#303030;
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.general__listas{
+    color: white;
+    font-size: 3rem;
+    background-color:#303030;
+    padding: 30px;
+ 
+}
+
+form p{
+    background-color:#303030;
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header */
+.header{
+    background-color: black;
+}
+
+.header__logo{
+    width: 60px;
+}
+
+.header__navegacion{
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav ul li{
+    padding: 15px;
+}
+
+/* Cuerpo de pagina */
+.main__flex{
+    text-align: center;
+    div {
+        padding: 20px;
+    }
+    p{
+        font-size: 3rem;
+        color: white;
+    }
+}
+
+.main__padding{
+    border: solid;
+    padding-bottom: 10px;
+}
+
+.main__margin{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main__flex_item{
+    width: 500px;
+    margin: 10px;
+}
+
+.main__reverse{
+    flex-wrap: wrap-reverse;
+}
+
+
+.main__lista{
+    color: white;
+    font-size: 3rem;
+    background-color:#303030;
+    padding: 30px;
+    list-style: none;
+}
+
+
+/* footer */
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.footer__flex{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.footer__flex__fila{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.footer__fin{
+    padding: 5px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer__logo{
+    width: 80px;
+}
+
+.colorAmarillo{
+    color: #F9A826;
+}
+
+.listaFooter{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Flexbox envios*/
+
+.flexEnvios{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Titulos */
+h1{
+    font-size: 4rem;
+    font-family: 'Bungee Shade', cursive;
+    color:white;
+    text-align: center;
+    text-decoration:underline;
+    margin: 0%;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+h3{
+    background-color: #a6d3a0;
+    width: 4cm;
+    border-radius: 15px;
+}
+
+/* Textos */
+.medidaP{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.medidaM{
+    font-size: 3rem;
+    color: white;
+}
+
+.italica {
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+.negrita {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Imagenes */
+.imgCuerpo{
+    width: 100%;
+}
+
+.bordesRedondeados{
+    border-radius: 50px;
+}
+
+.colores{
+    background-color: #F9A826;
+    background-color: rgba(0, 39, 43, 0.61);
+}
