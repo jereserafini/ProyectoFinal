@@ -45,34 +45,52 @@ form p {
 
 /* Header */
 .header {
-  background-color: black; }
+  background-color: black;
+  margin-bottom: 50px;
+  z-index: 10;
+  position: fixed; }
 
 .header__logo {
   width: 60px; }
 
 .header__navegacion {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-family: 'Roboto', sans-serif; }
 
 header nav ul li {
-  padding: 15px; }
+  padding-left: 15px; }
+
+.active {
+  color: #F9A826 !important; }
+
+.navbar-nav .nav-item .nav-link {
+  color: white; }
+
+.nav-item a:hover {
+  color: #F9A826 !important; }
 
 /* Cuerpo de pagina */
+.main {
+  padding-top: 100px; }
+
 .main__flex {
   text-align: center; }
   .main__flex div {
     padding: 20px; }
   .main__flex p {
-    font-size: 3rem;
-    color: white; }
+    font-size: 1.75rem;
+    color: white;
+    line-height: 4; }
 
 .main__padding {
   border: solid;
   padding-bottom: 10px; }
 
 .main__margin {
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 10%; }
+
+.main__margin__inicio {
+  margin-bottom: 8%; }
 
 .main__flex_item {
   width: 500px;
@@ -83,10 +101,11 @@ header nav ul li {
 
 .main__lista {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   background-color: #303030;
-  padding: 30px;
-  list-style: none; }
+  padding: 20px;
+  list-style: none;
+  line-height: 3; }
 
 /* footer */
 .footer {
@@ -105,7 +124,7 @@ header nav ul li {
   justify-content: space-around; }
 
 .footer__fin {
-  padding: 5px;
+  padding: 20px;
   color: white;
   font-size: 1.5rem;
   text-align: center; }
@@ -139,7 +158,7 @@ h1 {
 h2 {
   text-align: center;
   color: white;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   border-radius: 15px;
   padding: 5px; }
 
