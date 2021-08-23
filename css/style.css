@@ -71,7 +71,7 @@ header nav ul li {
 
 /* Cuerpo de pagina */
 .main {
-  padding-top: 100px; }
+  padding-top: 130px; }
 
 .main__flex {
   text-align: center; }
@@ -82,15 +82,20 @@ header nav ul li {
     color: white;
     line-height: 4; }
 
+@media (max-width: 768px) {
+  .main__flex {
+    padding-top: 10px;
+    padding-bottom: 50px; } }
+
 .main__padding {
-  border: solid;
+  background-color: #303030;
   padding-bottom: 10px; }
 
 .main__margin {
-  margin-bottom: 10%; }
+  margin-bottom: 5%; }
 
 .main__margin__inicio {
-  margin-bottom: 8%; }
+  margin-bottom: 7%; }
 
 .main__flex_item {
   width: 500px;
@@ -116,8 +121,7 @@ header nav ul li {
 .footer__flex {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  align-items: center; }
+  padding-top: 20px; }
 
 .footer__fin {
   padding: 20px;
@@ -125,28 +129,20 @@ header nav ul li {
   font-size: 1.5rem; }
 
 .footer__logo {
-  width: 80px;
-  padding: auto; }
+  width: 80px; }
 
-.footer__padding {
-  padding: 10px; }
+@media (max-width: 768px) {
+  .footer__padding {
+    padding-bottom: 10px; } }
+
+.espacio__inferior {
+  padding-bottom: 15px; }
 
 .footer label {
   padding-left: 5px; }
 
 .colorAmarillo {
   color: #F9A826; }
-
-.listaFooter {
-  list-style: none;
-  color: white;
-  font-size: 1.5rem; }
-
-/* Flexbox envios*/
-.flexEnvios {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
 
 /* Titulos */
 h1 {
@@ -156,6 +152,10 @@ h1 {
   text-align: center;
   text-decoration: underline;
   margin: 0%; }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem; } }
 
 h2 {
   text-align: center;
@@ -192,7 +192,3 @@ h3 {
 
 .bordesRedondeados {
   border-radius: 50px; }
-
-.colores {
-  background-color: #F9A826;
-  background-color: rgba(0, 39, 43, 0.61); }

@@ -78,29 +78,32 @@
                     <section>
                         <form class="medidaP" action="#" method="POST" enctype="application/x-www-form-urlencoded">
                                 <div class="form-floating mb-3">
-                                    <input type="text" name="nombre" class="form-control  form-control-lg" id="floatingInput" placeholder="Nombres">
                                     <label for="floatingInput">Nombres</label>
+                                    <input type="text" name="nombre" class="form-control  form-control-lg" id="floatingInput" placeholder="Nombres">
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="text" name="apellido" class="form-control  form-control-lg" id="floatingInput" placeholder="Apellidos">
                                     <label for="floatingInput">Apellidos</label>
+                                    <input type="text" name="apellido" class="form-control  form-control-lg" id="floatingInput" placeholder="Apellidos">
                                 </div>
                                 <div class="form-floating mb-3">
+                                    <label for="floatingInput">Dirección de Correo</label>
                                     <input type="email" class="form-control  form-control-lg" id="floatingInput" placeholder="nombre@ejemplo.com">
-                                    <label for="floatingInput">Direccion de Correo</label>
                                 </div>
-                                <select name="Sexo" class="form-select form-select-lg mb-3" aria-label="form-select-lg example">
-                                    <option selected>Sexo</option>
-                                    <option value="M">Masculino</option>
-                                    <option value="F">Femenino</option>
-                                    <option value="O">Otro</option>
-                                </select>
-                                <textarea class="form-control " placeholder="Presupuesto/Consulta" id="floatingTextarea2" style="height: 100px"></textarea>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Acepta recibir informacin acerca de nosotros
-                                    </label>
+                                <div>
+                                    <label>Sexo</label>
+                                    <select name="Sexo" class="form-control mb-3 form-control-lg">
+                                      <option>Masculino</option>
+                                      <option>Femenino</option>
+                                      <option>Otro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Consulta/Presupuesto</label>
+                                    <textarea class="form-control form-control-lg" rows="3"></textarea>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input">
+                                    <label class="form-check-label" for="exampleCheck1">Acepta recibir información acerca de nosotros</label>
                                 </div>
                             <input type="submit" value="Enviar formulario" class="btn btn-warning btn-lg"/>
                             <input type="reset" value="Limpiar formulario" class="btn btn-warning btn-lg"/>
@@ -113,7 +116,7 @@
                 <div class="col-12 col-md-6 main__flex">
                     <section>
                         <p class="medidaM">Si te interesan nuestros productos...</p>
-                        <p class="medidaM">Queres saber mas de ellos...</p>
+                        <p class="medidaM">te gustaría saber más de ellos...</p>
                         <p class="medidaM">O buscas un presupuesto...</p>
                         <p class="medidaM">No dudes en contactarnos</p>
                         <p>Y nos comunicaremos con usted a la brevedad</p>
@@ -126,29 +129,34 @@
 
         <!-- Pie de página -->
         <div class="footer">
-            <footer class="footer__flex">
-                <div class="footer__flex__fila">
-                    <div>
+            <footer class="footer__flex container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-4 footer__padding">
+                        <div class="row d-flex justify-content-center">
+                            <div class="espacio__inferior">
+                                <img src="../image/direccion.svg" width="25" alt="direccion">
+                                <label class="medidaP">Resistencia, Chaco</label>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div>
+                                <img src="../image/whatsapp.svg" width="25" alt="whatsapp">
+                                <label class="medidaP">+54362-4763489</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 footer__padding d-flex justify-content-center">
                         <a href="index.html"><img class="footer__logo" src="../image/logo.png" alt="logo"/></a>
                     </div>
-                    <div>
-                        <ul>
-                            <li><a class="listaFooter" href="../pages/productos.html">Productos</a></li>
-                            <li><a class="listaFooter" href="../pages/nosotros.html">Nosotros</a></li>
-                            <li><a class="listaFooter" href="../pages/contacto.html">Contacto</a></li>
-                            <li><a class="listaFooter" href="../pages/enviosypagos.html">Envios y Pagos</a></li>
-                        </ul>
-                    </div>
-                    <div class="medidaP">
-                        Noticias
-                        <form action="#">
-                        <input type="email" name="nombre@ejemplo.com" placeholder="nombre@ejemplo.com"/>
-                        <input type="submit" value="Enviar"/>
-                        </form>
+                    <div class="medidaP col-12 col-md-4 footer__padding d-flex justify-content-around">
+                        <img class="footer__redes" src="../image/facebook.svg" width="35" alt="facebook">
+                        <img class="footer__redes" src="../image/twitter.svg" width="35" alt="twitter">
+                        <img class="footer__redes" src="../image/instagram.svg" width="35" alt="instagram">
                     </div>
                 </div>
-                <div class="footer__fin">
-                    Copyright 2021 <span class="colorAmarillo">Serafini, Jeremías</span>
+                <div class="footer__fin row d-flex justify-content-center align-items-center">
+                    <img src="../image/copyright.svg" alt="copyright">
+                    Copyright 2021<span class="colorAmarillo">Impresión3D</span>
                 </div>
             </footer>
         </div>
