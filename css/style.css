@@ -9,15 +9,13 @@ html {
   font-size: 62.5%; }
 
 .general {
-  background-image: radial-gradient(circle, #aaaaaaa2, #898989a1, #6a6a6aa9, #4c4c4ca9, #303030), url(../image/estrellas.jpg);
+  background-image: url(../image/estrellas.jpg);
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
-  animation-duration: 1s;
-  animation-name: aparecer; }
+  align-items: stretch; }
 
 .general__formulario {
   background-color: #303030;
@@ -42,6 +40,14 @@ form p {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@media (max-width: 768px) {
+  .footer__padding {
+    padding-bottom: 10px; }
+  h1 {
+    font-size: 3rem; }
+  .main__flex p {
+    font-size: 2rem; } }
 
 /* Header */
 .header {
@@ -118,6 +124,10 @@ header nav ul li {
   color: white;
   max-width: 100%; }
 
+.footer__animacion a:hover {
+  animation: heartBeat;
+  animation-duration: 5s; }
+
 .footer__flex {
   display: flex;
   flex-direction: column;
@@ -130,10 +140,6 @@ header nav ul li {
 
 .footer__logo {
   width: 80px; }
-
-@media (max-width: 768px) {
-  .footer__padding {
-    padding-bottom: 10px; } }
 
 .espacio__inferior {
   padding-bottom: 15px; }
@@ -152,10 +158,6 @@ h1 {
   text-align: center;
   text-decoration: underline;
   margin: 0%; }
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3rem; } }
 
 h2 {
   text-align: center;
