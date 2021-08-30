@@ -14,58 +14,13 @@ html{
 }
 
 .general{
-    background-image: /* radial-gradient(circle, #aaaaaaa2, #898989a1, #6a6a6aa9, #4c4c4ca9, #303030),  */url(../image/estrellas.jpg);
+    background-image: url(../image/estrellas.jpg);
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items:stretch;
-}
-
-.general__formulario{
-    background-color: $colorsecundario;
-    width: 70%;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.general__listas{
-    color: white;
-    font-size: 3rem;
-    background-color: $colorsecundario;
-    padding: 30px;
- 
-}
-
-form p{
-    background-color: $colorsecundario;
-    width: 70%;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-@keyframes aparecer{
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer__padding{
-        padding-bottom: 10px;
-    }
-    h1{
-        font-size: 3rem;
-    }
-    .main__flex{
-        p{
-            font-size: 2rem;
-        }
-    }   
 }
 
 /* Header */
@@ -101,6 +56,7 @@ header nav ul li{
     color: $colorgeneral !important;
 }
 
+
 /* Cuerpo de pagina */
 .main{
     padding-top: 130px;
@@ -115,6 +71,14 @@ header nav ul li{
         font-size: 1.75rem;
         color: white;
         line-height: 4;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__flex{
+        p{
+            line-height: 3;
+        }
     }
 }
 
@@ -157,8 +121,22 @@ header nav ul li{
     line-height: 3;
 }
 
+@media (max-width: 768px) {
+    .main__flex{
+        p{
+            font-size: 2rem;
+        }
+    }   
+}
+
 
 /* footer */
+@media (max-width: 768px) {
+    .footer__padding{
+        padding-bottom: 10px;
+    }
+}
+
 .footer{
     background-color: black;
     color: white;
@@ -208,6 +186,12 @@ h1{
     margin: 0%;
 }
 
+@media (max-width: 768px) {
+    h1{
+        font-size: 3rem;
+    }
+}
+
 h2{
     text-align: center;
     color: white;
@@ -233,22 +217,13 @@ h3{
     color: white;
 }
 
-.italica {
-    font-style: italic;
-    font-family: 'Roboto', sans-serif;
-}
-
 .negrita {
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
 
-
 /* Imagenes */
 .imgCuerpo{
     width: 100%;
-}
-
-.bordesRedondeados{
     border-radius: 50px;
 }

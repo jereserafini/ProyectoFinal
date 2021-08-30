@@ -17,38 +17,6 @@ html {
   justify-content: space-between;
   align-items: stretch; }
 
-.general__formulario {
-  background-color: #303030;
-  width: 70%;
-  border-radius: 5px;
-  padding: 5px; }
-
-.general__listas {
-  color: white;
-  font-size: 3rem;
-  background-color: #303030;
-  padding: 30px; }
-
-form p {
-  background-color: #303030;
-  width: 70%;
-  border-radius: 5px;
-  padding: 5px; }
-
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@media (max-width: 768px) {
-  .footer__padding {
-    padding-bottom: 10px; }
-  h1 {
-    font-size: 3rem; }
-  .main__flex p {
-    font-size: 2rem; } }
-
 /* Header */
 .header {
   background-color: black;
@@ -89,6 +57,10 @@ header nav ul li {
     line-height: 4; }
 
 @media (max-width: 768px) {
+  .main__flex p {
+    line-height: 3; } }
+
+@media (max-width: 768px) {
   .main__flex {
     padding-top: 10px;
     padding-bottom: 50px; } }
@@ -118,7 +90,15 @@ header nav ul li {
   list-style: none;
   line-height: 3; }
 
+@media (max-width: 768px) {
+  .main__flex p {
+    font-size: 2rem; } }
+
 /* footer */
+@media (max-width: 768px) {
+  .footer__padding {
+    padding-bottom: 10px; } }
+
 .footer {
   background-color: black;
   color: white;
@@ -159,6 +139,10 @@ h1 {
   text-decoration: underline;
   margin: 0%; }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem; } }
+
 h2 {
   text-align: center;
   color: white;
@@ -180,17 +164,11 @@ h3 {
   font-size: 3rem;
   color: white; }
 
-.italica {
-  font-style: italic;
-  font-family: 'Roboto', sans-serif; }
-
 .negrita {
   font-weight: 700;
   font-family: 'Roboto', sans-serif; }
 
 /* Imagenes */
 .imgCuerpo {
-  width: 100%; }
-
-.bordesRedondeados {
+  width: 100%;
   border-radius: 50px; }
