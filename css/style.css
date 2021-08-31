@@ -17,6 +17,9 @@ html {
   justify-content: space-between;
   align-items: stretch; }
 
+.esquinas {
+  border-radius: 15px; }
+
 /* Header */
 .header {
   background-color: black;
@@ -70,7 +73,7 @@ header nav ul li {
   padding-bottom: 10px; }
 
 .main__margin {
-  margin-bottom: 5%; }
+  margin-bottom: 10%; }
 
 .main__margin__inicio {
   margin-bottom: 7%; }
