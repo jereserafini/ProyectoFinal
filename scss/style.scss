@@ -29,7 +29,7 @@ html{
 
 /* Header */
 .header{
-    background-color: black;
+    background-color: $colorgeneral;
     margin-bottom: 50px;
     z-index: 10;
     position: fixed;
@@ -37,6 +37,7 @@ html{
 
 .header__logo{
     width: 60px;
+    border-radius: 5px;
 }
 
 .header__navegacion{
@@ -49,15 +50,15 @@ header nav ul li{
 }
 
 .active{
-    color: $colorgeneral !important;
+    color: white !important;
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: white;
+    color: black;
 }
 
 .nav-item a:hover{
-    color: $colorgeneral !important;
+    color: grey !important;
 }
 
 
@@ -74,22 +75,22 @@ header nav ul li{
     p{
         font-size: 1.75rem;
         color: white;
-        line-height: 4;
+        line-height: 2;
     }
 }
 
-@media (max-width: 768px) {
-    .main__flex{
-        p{
-            line-height: 3;
-        }
-    }
-}
 
 @media (max-width: 768px) {
     .main__flex{
         padding-top: 10px;
         padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fondoMobile{
+        padding-top: 20px ;
+        background-color: grey;
     }
 }
 
@@ -122,7 +123,7 @@ header nav ul li{
     background-color: $colorsecundario;
     padding: 20px;
     list-style: none;
-    line-height: 3;
+    line-height: 2;
 }
 
 @media (max-width: 768px) {

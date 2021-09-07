@@ -22,13 +22,14 @@ html {
 
 /* Header */
 .header {
-  background-color: black;
+  background-color: #F9A826;
   margin-bottom: 50px;
   z-index: 10;
   position: fixed; }
 
 .header__logo {
-  width: 60px; }
+  width: 60px;
+  border-radius: 5px; }
 
 .header__navegacion {
   font-size: 1.75rem;
@@ -38,13 +39,13 @@ header nav ul li {
   padding-left: 15px; }
 
 .active {
-  color: #F9A826 !important; }
+  color: white !important; }
 
 .navbar-nav .nav-item .nav-link {
-  color: white; }
+  color: black; }
 
 .nav-item a:hover {
-  color: #F9A826 !important; }
+  color: grey !important; }
 
 /* Cuerpo de pagina */
 .main {
@@ -57,16 +58,17 @@ header nav ul li {
   .main__flex p {
     font-size: 1.75rem;
     color: white;
-    line-height: 4; }
-
-@media (max-width: 768px) {
-  .main__flex p {
-    line-height: 3; } }
+    line-height: 2; }
 
 @media (max-width: 768px) {
   .main__flex {
     padding-top: 10px;
     padding-bottom: 50px; } }
+
+@media (max-width: 768px) {
+  .fondoMobile {
+    padding-top: 20px;
+    background-color: grey; } }
 
 .main__padding {
   background-color: #303030;
@@ -91,7 +93,7 @@ header nav ul li {
   background-color: #303030;
   padding: 20px;
   list-style: none;
-  line-height: 3; }
+  line-height: 2; }
 
 @media (max-width: 768px) {
   .main__flex p {
